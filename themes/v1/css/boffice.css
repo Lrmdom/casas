@@ -1,0 +1,546 @@
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.tab-content .tab-pane{
+    border: 1px solid #ddd;
+    padding-top: 3em;
+}
+.nav-second-level > li > a{
+    margin-left:3em;
+}
+.panel-title > a {
+    display: block !important;
+    text-align: center !important;
+}
+.ui-datepicker {
+    /* width: 90%; */
+    padding: 0;
+    font-size: 80%;
+}
+.cWizard .panel-heading {
+    color:black;
+    background: #ADC9C8;
+    display: block;
+    font-weight: bolder;
+}
+#languagePickerContainer {
+    margin: 14px 50px 0 0;
+    z-index: 2;
+    width: auto;
+}
+.img-thumbnail{
+    cursor: pointer;
+}
+.buttonWrapper{
+    margin: 30px;
+}
+.form-horizontal .form-group {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#side-menu .glyphicon{
+    margin-right: 10px;
+}
+.grid-view thead tr:first-child{
+    background: #adc9c8;
+
+}
+thead tr.filters{
+    background: #d4dbdb;
+}
+.imgGridView img{
+    max-width: 100px;
+    height:auto;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.viewMore{
+    background-image: url('images/transita_inicio.jpg') ;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 15px 15px;
+    cursor: pointer;
+}
+
+thead tr.filters td input, thead tr.filters td select{
+    width: 75%;
+    display: block;
+    width: 100%;
+    height: 28px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.button-column a{
+    margin-left:5px;
+}
+.modal {
+    text-align: center;
+}
+
+.modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.grid-view .button-column {
+    width: auto !important;
+}
+.price{
+    color: red !important;
+    margin-left: 20px !important;
+    font-weight:bold;
+    /* border: rgb(75, 232, 10) solid medium; */
+    padding: 10px;
+}
+
+.certifImg{
+    width: 50px;
+    height:50px;
+}
+.xupload-form{
+    display: none;
+}
+#page{
+    min-height: 500%;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+.sidebar ul li {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+
+
+.sidebar .nav-second-level li{
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 50px;
+}
+
+
+
+
+//-----------------------------------------------------
+.arrow {
+    float:right;
+}
+
+
+//------------------------------------------------------
+
+.smallIcon {
+    font-size: 2.5em;
+}
+body{
+    color: #999;
+    font-size: 1.2em;
+}
+.register{
+    color:#555555;
+}
+.breadcrumb{
+    margin-bottom:0;
+    background: #FFFFFF;
+}
+li.page.selected a{
+    background: #06c;
+    color:#FFF;
+}
+
+
+#loading{
+
+    position: fixed;
+    top:50%;
+    left:50%;
+
+    height:100px;
+    width:100px;
+}
+.prettycheckbox .checked {
+    background-position: -60px 0;
+}
+.prettyradio .checked {
+    background-position: -240px 0;
+}
+.prettycheckbox ,.prettyradio {
+    height: 20px;
+    width: 20px;
+    display:inline-block;
+    //float: left;
+    cursor: pointer;
+    margin-left: 10px !important;
+    // background: url('/css/images/sprites-sfa68604977.png');
+}
+.nav-tabs {
+    border-bottom:none;
+}
+.formautcplt .form-group{
+    width: 100%;
+}
+.form-search .form-group input[type='checkbox'] {
+    margin-left: 15px;
+}
+div.flash-error, div.flash-notice, div.flash-success
+{
+    padding:.8em;
+    margin-bottom:1em;
+    border:2px solid #ddd;
+}
+
+div.flash-error
+{
+    background:#FBE3E4;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+    background:#FFF6BF;
+    color:#514721;
+    border-color:#FFD324;
+}
+
+div.flash-success
+{
+    background:#E6EFC2;
+    color:#264409;
+    border-color:#C6D880;
+}
+
+div.flash-error a
+{
+    color:#8a1f11;
+}
+
+div.flash-notice a
+{
+    color:#514721;
+}
+
+div.flash-success a
+{
+    color:#264409;
+}
+
+
+.datepick{
+    background: white url("/img/calendar.png") no-repeat 95%;
+}
+
+
+
+
+#footer
+{
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 0.8em;
+    text-align: center;
+
+}
+
+
+.ui-button .ui-button-text:hover {
+    color:#fff;
+}
+
+
+
+.tabs-below > .nav-tabs{
+    border:none;
+}
+
+.grid-view table.items {
+    font-size: 1.2em !important;
+}
+
+
+.divbuttons{
+    /* float:right; */
+    //display:none;
+    margin-top: 20px;
+    position: absolute;
+    margin-left: 450px;
+}
+
+.pagination a {
+    border-width: 1px;
+}
+
+.pagination li.hidden {
+    display: none;
+    visibility: hidden;
+}
+.pager .next > a, .pager .next > span {
+    float: none;
+}
+.pager .previous > a, .pager .previous > span {
+    float: none;
+}
+.panel-title-blk > a {
+
+    display: block;
+}
+
+
+.socicons{
+
+    margin:10px;
+}
+
+
+
+#mostraimgs{
+    color:#FFFFFF;
+}
+.fiximage{
+    margin-left: 20px;
+}
+
+td.LivreOcupadoTransita a.ui-state-default{
+    background-image:url('images/LivreOcupadoTransita.jpg');
+}
+
+td.desocupa a.ui-state-default{background-image:  none !important;background-color: green; color:#FFF;}
+
+
+td.transita_full_livre  a.ui-state-default
+{
+    background-image:url('images/transita_livre_full.jpg');
+}
+td.transita_1  a.ui-state-default
+{
+    background-image:url('images/transita_1.jpg');
+    color:#FFF;
+}
+td.transita_2  a.ui-state-default
+{
+    background-image:url('images/transita_2.jpg');
+    color:#FFF;
+}
+td.transita_1_ocupa  a.ui-state-default
+{
+    background-image:url('images/transita_inicio.jpg');
+
+}
+td.transita_2_ocupa  a.ui-state-default
+{
+    background-image:url('images/transita_fim.jpg');
+}
+
+
+
+
+td.OcupadoLivreTransita a.ui-state-default{
+    background-image:url('images/OcupadoLivreTransita.jpg');
+}
+
+/*Estes nao estao a bombar*/
+
+td.transita_full_ocupado a.ui-state-default
+{
+
+    background-image:url('images/transita_full.jpg');
+
+}
+
+.ocupa a{
+
+
+    background: orangered !important;
+    color : white !important;
+}
+
+.periodoactivo a{
+
+    background: yellow !important;
+    color: black !important;
+}
+.periodoactivo2 a{
+
+    background: yellow !important;
+    color: black !important;
+}
+
+
+.ui-widget ui-widget-content{
+    font-weight: normal !important;
+}
+
+
+.logo{
+    width: 120px;
+    height: 51px;
+    margin: -15px 0 0 0;
+}
+
+
+.info{
+    width:80%;
+
+}
+
+
+.varrenda,.vvenda,.vrent{
+    display:none;
+}
+
+.btAction{
+    margin-top: 8px;
+}
+.sidenavbar{
+    min-width: 100%;
+    position: relative;
+}
+
+
+#map img,#map2 img {
+    max-width: none;
+}
+
+.dPicker{
+    /* margin-top:40px; */
+    font-size: 1em;
+    max-width: 100%;
+}
+
+
+.thumbs li img{
+    margin-bottom: 10px;
+    display: block;
+}
+ul.thumbs img { height:50px; width:60px; }
+
+
+
+.list-view .sorter {
+    margin: 0 0 10px 0;
+    text-align: right;
+    font-size: 1em;
+
+}
+
+.list-view .sorter ul {
+    display: inline;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.list-view .sorter li {
+    display: inline;
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+.icon-love {
+    color:  #de2525;
+}
+.icon-warning {
+    color: orange;
+}
+.icon-trust {
+    color: #1dbcfe;
+}
+.icon-success{
+    color: #249c2c;
+}
+
+.shareicons{
+    height: 90px;
+    margin-bottom: -25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+
+.sort-link{
+    background: url("/css/images/updown.gif") right center no-repeat scroll transparent;
+    padding-right: 20px;
+    display: inline-block;
+    width: 100%;
+    color: black;
+}
+.asc
+{
+    background:url(/css/images/up.gif) right center no-repeat !important;
+    padding-right: 10px;
+}
+
+.desc
+{
+    background:url(/css/images/down.gif) right center no-repeat !important;
+    padding-right: 10px;
+}
+#logo img{
+    width: 155px;
+    height: 60px;
+
+
+}
+
+
+.ui-dialog{
+    box-shadow: 2px 2px 8px #DADADA;
+}
+
+
+
+
+.langDrop{
+    /* min-width: 10px !important; */
+    z-index: 1000;
+}
+#langs{
+    cursor: pointer;
+    /* position: absolute; */
+}
+#content{
+    margin-top: 100px;
+    min-height: 500px;
+}
+
+
+
