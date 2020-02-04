@@ -549,7 +549,7 @@ class CasaController extends Controller {
             $model->setScenario("notcertif");
         }
 
-        if ($_GET['idpreco']) {
+        if (isset($_GET['idpreco'])) {
             $preco = Preco::model()->find('id =' . Yii::app()->getRequest()->getQuery('idpreco'));
         } else {
             $preco = NULL;

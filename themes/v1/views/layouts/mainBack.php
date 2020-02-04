@@ -41,7 +41,7 @@
                                 <script language="JavaScript" type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.jqEasyCharCounter.min.js"></script>
                                 <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
 
-                                <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=<?php echo Yii::app()->params['mapsKey']; ?>&sensor=true" type="text/javascript"></script>
+                                <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=<?php echo Yii::app()->params['mapsKey']; ?>" type="text/javascript"></script>
                                 <script type="text/javascript">
                                     var _gaq = _gaq || [];
                                     _gaq.push(['_setAccount', '<?php echo Yii::app()->params['analyticsKey']; ?>']);

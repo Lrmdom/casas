@@ -77,7 +77,7 @@ class ButtonColumnExt extends CButtonColumn {
             $this->deleteButtonLabel = '<span class="glyphicon glyphicon-trash icon-love" aria-hidden="true"></span>';
         if ($this->addButtonLabel === null)
             $this->addButtonLabel = '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>';
-        if ($this->viewButtonOptions['title'] === null)
+        /*if ($this->viewButtonOptions['title'] === null)
             $this->viewButtonOptions['title'] = Yii::t('zii', 'View');
         if ($this->updateButtonOptions['title'] === null)
             $this->updateButtonOptions['title'] = Yii::t('zii', 'Update');
@@ -87,7 +87,7 @@ class ButtonColumnExt extends CButtonColumn {
         if ($this->addButtonOptions['title'] === null)
             $this->addButtonOptions['title'] = Yii::t('zii', 'Add');
         if ($this->deleteConfirmation === null)
-            $this->deleteConfirmation = Yii::t('zii', 'Are you sure you want to delete this item?');
+            $this->deleteConfirmation = Yii::t('zii', 'Are you sure you want to delete this item?');*/
 
         foreach (array('view', 'update', 'delete', 'add') as $id) {
             $button = array(

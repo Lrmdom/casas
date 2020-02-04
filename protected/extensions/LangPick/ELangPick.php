@@ -100,7 +100,7 @@ class ELangPick extends CPortlet {
                 break;
             case 'links':
                 echo '
-                        <a class="dropdown dropdown-toggle"  id="dropdownMenuLang" data-toggle="dropdown"><img src="/images/' . Yii::app()->getLanguage() . '.gif" alt="' . $trans . '"/>
+                        <a class="dropdown dropdown-toggle"  id="dropdownMenuLang" data-toggle="dropdown"><img src="/images/' . Yii::app()->getLanguage() . '.gif" />
                         <span class="caret"></span>
                         </a>';
                 echo '<ul class="dropdown-menu langDrop" role="menu" aria-labelledby="dropdownMenuLang">';

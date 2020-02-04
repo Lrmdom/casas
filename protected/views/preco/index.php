@@ -35,7 +35,7 @@
                 'itemView' => '//preco/_view',
                 'summaryText' => '',
                 'emptyText' => 'Não existem promoções ou last minute deals',
-                "viewData" => array("helper" => $helper)
+                //"viewData" => array("helper" => $helper)
             ));
             ?>
         </div>

@@ -19,19 +19,16 @@ return array(
         'application.extensions.phpmailer.EMailer',
         'application.extensions.jtogglecolumn.JToggleColumn',
     ),
-    'modules' => array(
-        
-    ),
+    'modules' => array(),
     // application components
     'components' => array(
-       'cache' => array(
-            'class' => 'CDbCache',
-       ),
+        /*'cache' => array(
+             'class' => 'CDbCache',
+        ),*/
         'chartjs' => array('class' => 'chartjs.components.ChartJs'),
         'widgetFactory' => array(
             'widgets' => array(
-                'CLinkPager' => array(
-                    //'cssFile' => (strlen(dirname($_SERVER['SCRIPT_NAME'])) > 1 ? dirname($_SERVER['SCRIPT_NAME']) : '' ) . '/css/bootstrap.css',
+                'CLinkPager' => array(//'cssFile' => (strlen(dirname($_SERVER['SCRIPT_NAME'])) > 1 ? dirname($_SERVER['SCRIPT_NAME']) : '' ) . '/css/bootstrap.css',
                 ),
             ),
         ),
@@ -40,11 +37,11 @@ return array(
             'connectionID' => 'db',
             'sourceMessageTable' => 'SourceMessage',
             'translatedMessageTable' => 'Message',
-        //'cachingDuration' => (YII_DEBUG ? 0 : 360),
+            //'cachingDuration' => (YII_DEBUG ? 0 : 360),
         ),
         'file_i18n' => array(
             'class' => 'CPhpMessageSource',
-        //'cachingDuration' => (YII_DEBUG ? 0 : 3600),
+            //'cachingDuration' => (YII_DEBUG ? 0 : 3600),
         ),
         'commandMap' => array(
             'cron' => 'application.extensions.PHPDocCrontab'
@@ -92,13 +89,13 @@ return array(
         // 	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
         // ),
         // uncomment the following to use a MySQL database
-       'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=casas',
+        'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=casasdap_casasdap',
             'emulatePrepare' => true,
             //'username' => 'casasdap_admin',
             //'password' => 'kraft2012',
-'username' => 'root',
-'password' => 'root',
+            'username' => 'root',
+            'password' => 'root',
             'charset' => 'utf8',
             'class' => 'CDbConnection',
             'schemaCachingDuration' => 9600
@@ -114,12 +111,12 @@ return array(
                     'class' => 'CFileLogRoute',
                     'levels' => 'error, trace',
                 ),
-            // uncomment the following to show log messages on web pages
-            /*
-              array(
-              'class'=>'CWebLogRoute',
-              ),
-             */
+                // uncomment the following to show log messages on web pages
+                /*
+                  array(
+                  'class'=>'CWebLogRoute',
+                  ),
+                 */
             ),
         ),
     ),
@@ -127,18 +124,18 @@ return array(
     // using Yii::app()->params['paramName']
     'params' => array(
 
-       	'domain' => gethostname(),
+        'domain' => gethostname(),
         'adminEmail' => 'admin@casasdapraia.pt',
         'siteEmail' => 'geral@casasdapraia.pt',
         'noReplyEmail' => 'webmaster@casasdapraia.pt',
         "phone" => "+351 281956272 ",
-"mobile" => "+351 966684564",
+        "mobile" => "+351 966684564",
         'analyticsKey' => 'UA-37138261-1',
         'mapsKey' => 'AIzaSyCpjOF55hC2_pb4iA46kkjUWySYwtRCiso',
         'ga_email' => 'lmatiasdomingos@gmail.com',
         'ga_password' => '7bj8_GOO',
         'ga_profile_id' => '67214090',
-'watermarkImg' => 'css/images/casasdapraia2.png',
+        'watermarkImg' => 'css/images/casasdapraia2.png',
         //check fbUsirID http://graph.facebook.com/username
         'fbUserId' => "100004925709150",
         'fbAppId' => '790150834333514',

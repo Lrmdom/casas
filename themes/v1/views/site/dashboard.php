@@ -21,7 +21,7 @@
                 ?>        </div>
             <div id="tabs-2" role="tabpanel" class="tab-pane active">
                 <?php
-                $model = new Reserva(search);
+                $model = new Reserva("search");
                 $model->unsetAttributes();
                 $this->renderPartial('//reserva/prereservas', array(
                     'model' => $model,
@@ -29,7 +29,7 @@
                 ?>        </div>
             <div id="tabs-3" role="tabpanel" class="tab-pane">
                 <?php
-                $model = new Casa(search);
+                $model = new Casa("search");
                 $model->unsetAttributes();
                 $this->renderPartial('//casa/admin', array(
                     'model' => $model,
@@ -43,7 +43,7 @@
             </div>
             <div id="tabs-5" role="tabpanel" class="tab-pane">
                 <?php
-                $model = new Reserva(search);
+                $model = new Reserva("search");
                 $model->unsetAttributes();
                 $this->renderPartial('//reserva/adminFeedback', array(
                     'model' => $model,

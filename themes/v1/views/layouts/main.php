@@ -148,7 +148,7 @@
 
                                                         </li>
                                                         <li>
-                                                            <?php $this->widget('ext.LangPick.ELangPick', array('id' => 'langs')); ?>
+                                                            <?php //$this->widget('ext.LangPick.ELangPick', array('id' => 'langs')); ?>
 
                                                         </li>
 

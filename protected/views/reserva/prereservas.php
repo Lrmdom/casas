@@ -5,7 +5,10 @@
 if (isset($cod_casa)) {
     $id = $cod_casa;
 } else {
-    $id = $_GET['id'];
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+    }
+
 }
 
 
