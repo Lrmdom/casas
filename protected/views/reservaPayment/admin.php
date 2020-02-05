@@ -4,8 +4,9 @@
 <?php
 $this->widget('zii.widgets.grid.CGridView', array(
     'id' => 'reserva-payment-grid',
-    //'dataProvider'=>$model->search($data->idreserva,$data->idpreco),
-    'dataProvider' => $model->search($idreserva, $idpreco),
+   // 'dataProvider'=>$model->search($data->idreserva,$data->idpreco),
+    //'dataProvider' => $model->search($idreserva, $idpreco),
+    'dataProvider' => $model->search(),
     'filter' => $model,
     //
     "itemsCssClass" => 'table  table-bordered table-hover',

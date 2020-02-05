@@ -5,7 +5,7 @@
     <?php
     $this->widget('zii.widgets.grid.CGridView', array(
         'id' => 'feedback-grid',
-        'dataProvider' => $model->search($modelCasa->cod_casa),
+        'dataProvider' => $model->search($model->cod_casa),
         'filter' => $model,
         'showTableOnEmpty' => FALSE,
         'ajaxUrl' => $this->createUrl('feedback/admin'),

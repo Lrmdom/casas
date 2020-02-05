@@ -14,7 +14,7 @@ $this->breadcrumbs = array(
 $this->widget('zii.widgets.grid.CGridView', array(
     'id' => 'reserva-grid-now',
     'dataProvider' => $model->searchNow(),
-    'ajaxUrl' => $url,
+    //'ajaxUrl' => $url,
     'filter' => $model,
     "itemsCssClass" => 'table  table-bordered table-hover table-responsive table-condensed',
     'columns' => array(

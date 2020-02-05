@@ -84,7 +84,7 @@ class ReservaPayment extends CActiveRecord {
      * Retrieves a list of models based on the current search/filter conditions.
      * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
      */
-    public function search($idreserva, $idpreco) {
+    public function search() {
         // Warning: Please modify the following code to remove attributes that
         // should not be searched.
 
@@ -95,7 +95,7 @@ class ReservaPayment extends CActiveRecord {
         $criteria->compare('id_tipo_pagamento', $this->id_tipo_pagamento, true);
         $criteria->compare('t.valor', $this->valor);
         //$criteria->compare('reservas.idpreco', $idpreco);
-        $criteria->compare('idreserva', $idreserva);
+        //$criteria->compare('idreserva', $idreserva);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
