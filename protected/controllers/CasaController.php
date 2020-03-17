@@ -763,6 +763,8 @@ class CasaController extends Controller {
 //   $results = $model->findAll("for_rent=1 and activo=1");
         $results = $model->isearchMapMap()->getData();
         $res = $model->filterByDate($results, date("Y-m-d", strtotime($model->inicio)), date("Y-m-d", strtotime($model->fim)));
+
+       // ‌‌CJSON::encode($res);
         $this->render('quicksearchbydate', array(
             'model' => $model,
             'results' => $res,

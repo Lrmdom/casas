@@ -98,7 +98,7 @@ return array(
             'password' => 'root',
             'charset' => 'utf8',
             'class' => 'CDbConnection',
-            'schemaCachingDuration' => 9600
+            'schemaCachingDuration' => 9600,
         ),
         'errorHandler' => array(
             // use 'site/error' action to display errors

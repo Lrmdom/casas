@@ -18,6 +18,8 @@ $this->pageTitle = "Resultados de pesquisa";
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="lists">
             <?php
+            //‌‌json_encode(CJSON::encode($model->isearchMap()->getData()));
+           // ‌‌CJSON::encode($model->isearchMap()->getData());
             $this->widget('zii.widgets.CListView', array(
                 'dataProvider' => $model->isearchMap(),
                 'itemView' => '_view',
