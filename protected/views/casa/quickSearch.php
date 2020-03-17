@@ -20,6 +20,18 @@ $this->pageTitle = "Resultados de pesquisa";
             <?php
             //‌‌json_encode(CJSON::encode($model->isearchMap()->getData()));
            // ‌‌CJSON::encode($model->isearchMap()->getData());
+
+            /*$Productmodel=Product::model()->
+            findAll(array(
+                'condition'=>'isactive=1 and catid='.$_POST['catid'],
+                'order'=>'name'
+            ));
+
+            if($Productmodel){
+            $data=CHtml::listData($Productmodel,'productid','name');
+            print_r(json_encode($data));*/
+            
+
             $this->widget('zii.widgets.CListView', array(
                 'dataProvider' => $model->isearchMap(),
                 'itemView' => '_view',
