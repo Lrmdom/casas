@@ -66,7 +66,7 @@ class SeoTitle extends CWidget
 			$parts[] = Yii::app()->name;
 		}
 
-		echo '<title>'.implode($parts, $this->separator).'</title>';
+		echo '<title>'.implode($this->separator,$parts).'</title>';
 	}
 
 	/**

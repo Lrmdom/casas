@@ -72,7 +72,7 @@ return array(
         //May also be set to 'debug' to instead dump the contents of the email into the view
         //),
         // uncomment the following to enable URLs in path-format
-        'urlManager' => array(
+        /*'urlManager' => array(
             'urlFormat' => 'path',
             //'showScriptName' => false,
             //'caseSensitive' => false,
@@ -84,14 +84,14 @@ return array(
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
             ),
-        ),
+        ),*/
         //  'db'=>array(
         // 	'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
         // ),
         // uncomment the following to use a MySQL database
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=casasdap_casasdap',
-            'emulatePrepare' => true,
+            'connectionString' => 'mysql:host=172.17.0.3;dbname=casasdap_casas',
+            //'emulatePrepare' => true,
             //'username' => 'casasdap_admin',
             //'password' => 'kraft2012',
             'username' => 'root',

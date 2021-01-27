@@ -30,7 +30,7 @@ $this->pageTitle = "Resultados de pesquisa";
             if($Productmodel){
             $data=CHtml::listData($Productmodel,'productid','name');
             print_r(json_encode($data));*/
-            
+
 
             $this->widget('zii.widgets.CListView', array(
                 'dataProvider' => $model->isearchMap(),
