@@ -1,3 +1,2 @@
 FROM php:5.6.14-fpm
-RUN    apt-get update -yqq && \
-       apt-get install -yqq pdo_mysql \
+RUN docker-php-ext-install pdo_mysql
