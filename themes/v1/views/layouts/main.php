@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="collapse navbar-collapse" id="collapse-1">
 
-
+yyyyyyyyyyyyy teste docker
 
                                         <ul class="nav nav-tabs menu text-center navbar-right">
                                             <?php echo $this->renderPartial('//cliente/ext', array('id' => Yii::app()->user->id)); ?>

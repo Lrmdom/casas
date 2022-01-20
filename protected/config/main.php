@@ -90,10 +90,11 @@ return array(
         // ),
         // uncomment the following to use a MySQL database
         'db' => array(
-            'connectionString' => 'mysql:host=172.17.0.3;dbname=casasdap_casas',
+            'connectionString' => 'mysql:host=mysql;port=3306;dbname=casasdap_casas',
             //'emulatePrepare' => true,
             //'username' => 'casasdap_admin',
             //'password' => 'kraft2012',
+            'charset' => 'utf8',
             'username' => 'root',
             'password' => 'root',
             'charset' => 'utf8',
@@ -138,8 +139,8 @@ return array(
         'watermarkImg' => 'css/images/casasdapraia2.png',
         //check fbUsirID http://graph.facebook.com/username
         'fbUserId' => "100004925709150",
-        'fbAppId' => '790150834333514',
-        'fbAppSecret' => '20e682450ed4318abd3f390d1c4ed6a3',
+        'fbAppId' => '380781463555061',
+        'fbAppSecret' => '7936671b43267894ed21783200a33190',
         "fbAppPublishPage" => "casasda.praia",
         'fbPath' => 'https://www.facebook.com/casasda.praia',
         'twitterPath' => 'http://twitter.com/casasdapraia1',

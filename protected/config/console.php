@@ -26,7 +26,7 @@ return array(
             'pathLayouts' => 'application.views.email.layouts'
         ),
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=casasdap_casas',
+            'connectionString' => 'mysql:host=mysql;dbname=casasdap_casas',
             //'emulatePrepare' => true,
             'username' => 'root',
             'password' => 'root',

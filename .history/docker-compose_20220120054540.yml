@@ -1,0 +1,40 @@
+version: '3'
+services:
+  nginx:
+    container_name: nginx
+    image: nginx
+    ports:
+      - '8081:80'
+    volumes:
+      - './docker/nginx/etc/nginx:/etc/nginx'
+      - './docker/nginx/conf.d:/etc/nginx/conf.d'
+      - './:/var/www/html'
+    links:
+      - php
+  php:
+    container_name: php
+    tty: true
+    build: ./docker/php
+    ports:
+      - '9000:9000'
+    volumes:
+      - './:/var/www/html'
+    links:
+     - mysql
+  mysql:
+    container_name: mysql
+    #image: 'mysql:5.6.22'
+    image: 'mariadb:10.6.4-focal'
+    ports:
+      - '33061:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=casasdap_casas
+    cap_add:
+      - SYS_NICE
+    volumes:
+      - 'service-data:/var/lib/mysql'
+volumes:
+   - service-data'

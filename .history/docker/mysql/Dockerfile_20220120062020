@@ -1,0 +1,3 @@
+FROM mariadb:10.6.4-focal
+
+ADD ./volumes/mysql/var/lib/mysql /var/lib/mysql

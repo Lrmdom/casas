@@ -15,7 +15,7 @@ $this->menu = array(
 <div class="alert alert-success">
    <span>
        <span class="phones">
-            (+351)281956272 , (+351)966684564
+            (+351)281956272 , (+351)966684564000
        </span>
        <span>
             <img class="skp" src="/css/images/skype.jpeg"/>  skypeId: casas-da-praia

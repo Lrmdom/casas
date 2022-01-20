@@ -18,7 +18,7 @@ $this->menu = array(
             <span class="glyphicon glyphicon-phone"></span>  (+351)966684564
             <span class="glyphicon glyphicon-phone">
             </span>
-            (+351)281956272
+            (+351)281956272 test
             <div class="text-center">
                 <img src="/css/images/skype.jpeg"/>  skypeId: casas-da-praia
             </div>

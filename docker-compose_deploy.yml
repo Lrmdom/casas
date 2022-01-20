@@ -1,0 +1,28 @@
+  
+version: '3'
+services:
+  nginx:
+    container_name: nginx
+    image: docker.io/licass/casasnginx
+    ports:
+      - '8021:80'
+    
+    links:
+      - php
+  php:
+    container_name: php
+    image: docker.io/licass/casasphp
+    ports:
+      - '9000:9000'
+   
+    links:
+     - mysql
+  mysql:
+    container_name: mysql
+    #image: 'mysql:5.6.22'
+    image: docker.io/licass/casasdb
+    ports:
+      - '33061:3306'
+  
+   
+

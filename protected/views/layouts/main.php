@@ -26,18 +26,18 @@
            <div id="header-links">
                 <span>
                     <span>
-                        <span>Suporte ao cliente</span>
+                        <span>Suporte ao cliente teste docker</span>
                         <span >(Seg-Dom 9-18)</span>
                     </span>
                     <span class="phones">
-                        (+351)281956272 , (+351)966684564 
+                        (+351)281956272 , (+351)966684564 555
                    </span>
                </span>
                 <span><ul class="menu-header-links">
                        <li><?php echo CHtml::link('Login Proiprietários', Yii::app()->createUrl('//site/loginOwner')); ?></li>
                         <li>Registrar</li>
                         <li>Ajuda</li>
-                        <li>Adicionar a sua Casa</li>
+                        <li>Adicionar a sua Casa333</li>
                     </ul></span> 
            </div>
            <div id="header">

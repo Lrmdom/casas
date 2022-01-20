@@ -1,0 +1,4 @@
+FROM mariadb:10.6.4-focal
+#COPY  conf.d /etc/nginx/conf.d
+
+COPY  . /var/www/html
