@@ -1,0 +1,35 @@
+  
+version: '3'
+services:
+  nginx:
+    container_name: nginx
+    image: docker.io/licass/casasnginx
+    ports:
+      - '8021:80'
+    
+    links:
+      - php
+  php:
+    container_name: php
+    image: docker.io/licass/casasphp
+    ports:
+      - '9000:9000'
+   
+    links:
+     - mysql
+  mysql:
+    container_name: mysql
+    image: docker.io/licass/casasdb
+    ports:
+      - '33061:3306'
+    # environment:
+    #     - MYSQL_ROOT_PASSWORD=root
+    #     - MYSQL_USER=root
+    #     - MYSQL_PASSWORD=root
+    #     - MYSQL_DATABASE=casasdap_casas
+    # volumes:
+    #   - './docker/mysql/var/lib/mysql:/var/lib/mysql'
+    #   - './docker/mysql/docker-entrypoint-initdb.d:/test'
+  
+   
+
