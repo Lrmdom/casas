@@ -1,0 +1,55 @@
+# Deploying to a Kubernetes Cluster
+
+API Platform comes with a native integration with [Kubernetes](https://kubernetes.io/) and the [Helm](https://helm.sh/)
+package manager.
+
+[Learn how to deploy in the dedicated documentation entry](https://api-platform.com/docs/deployment/kubernetes/).
+
+
+docker-compose -f docker-compose.prod.yml  up --build  ## to build containers to push
+   or
+docker-compose up  ### for dev purposes
+   or 
+docker-compose -f docker-compose.deploy.yml  up  ## for deploy purposes
+
+
+
+####workflow
+
+docker-compose -f docker-compose.prod.yml  up --build
+
+then
+
+docker tag my-image username/my-repo
+
+then
+
+docker push username/my-repo
+
+then
+
+docker-compose -f docker-compose.deploy.yml  up   ###  for deploys
+
+
+
+----------------then on k8s cluster.-----------
+must understand  and create a helm chart
+
+helm install casasyii1 helm/api-platform \
+--set php.image.repository=https://hub.docker.com/repository/docker/licass/casasphp \
+--set php.image.tag=latest \
+--set nginx.image.repository=https://hub.docker.com/repository/docker/licass/casasnginx \
+--set nginx.image.tag=latest \
+--set db.image.repository=https://hub.docker.com/repository/docker/licass/casasdb \
+--set db.image.tag=latest
+
+
+
+-----------Kubernetes deploy using KOMPOSE-----
+
+kompose convert  (first rename docker-compose.deploy.yml tp docker-compose.yml)
+
+      then
+      
+kubectl apply -f result-file1,result-file2,...
+
