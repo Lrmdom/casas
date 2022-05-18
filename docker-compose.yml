@@ -1,12 +1,5 @@
 version: '3'
-networks:
-  mynet:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 192.168.55.0/24
-          gateway: 192.168.55.1
+
 
 services:
   nginx:
@@ -21,9 +14,7 @@ services:
       - './:/var/www/html'
     links:
       - php
-    networks:
-      mynet:
-        ipv4_address: 192.168.55.15
+
     
   php:
     tty: true
@@ -35,9 +26,7 @@ services:
       - './:/var/www/html'
     links:
      - mysql
-    networks:
-      mynet:
-        ipv4_address: 192.168.55.10
+
   mysql:
     container_name: mysql
     #image: 'mysql:5.6.22'
@@ -52,8 +41,7 @@ services:
     cap_add:
       - SYS_NICE
     volumes:
-      - './docker/mysql/var/lib/mysql:/var/lib/mysql'
+#      - './docker/mysql/var/lib/mysql:/var/lib/mysql'
+      - '/home/led/Dropbox/mariadbCasasApi/var/lib/mysql:/var/lib/mysql'
       - './docker/mysql/docker-entrypoint-initdb.d:/test'
-    networks:
-      mynet:
-        ipv4_address: 192.168.55.12
+
