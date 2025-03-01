@@ -90,10 +90,12 @@ return array(
         // ),
         // uncomment the following to use a MySQL database
         'db' => array(
+            //'dsn' => 'pgsql:host=localhost;port=5432;dbname=casasdap_casas',
             'connectionString' => 'mysql:host=mysql;port=3306;dbname=casasdap_casas',
             //'emulatePrepare' => true,
             //'username' => 'casasdap_admin',
             //'password' => 'kraft2012',
+            'emulatePrepare'    => true,
             'charset' => 'utf8',
             'username' => 'root',
             'password' => 'root',

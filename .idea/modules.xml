@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../casas-api/.idea/casas-api.iml" filepath="$PROJECT_DIR$/../casas-api/.idea/casas-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/casasRemote.iml" filepath="$PROJECT_DIR$/.idea/casasRemote.iml" />
     </modules>
   </component>
